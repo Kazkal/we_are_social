@@ -22,6 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '$ii-l*$-15$&5ad33_581&p4ym+z2*6#d@a-v-kk+^0*r!^3bh'
 
+#Paypal settings#
+SITE_URL='http://127.0.0.1:8000'
+PAYPAL_NOTIFY_URL='http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL='AuctionHouse@gmail.com'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -40,6 +45,9 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'hello',
     'accounts',
+    'paypal.standard.ipn',
+    'paypal_store',
+    'products'
     ]
 
 MIDDLEWARE = [
@@ -128,4 +136,12 @@ AUTH_USER_MODEL = 'accounts.User'
 AUTHENTICATION_BACKENDS=(
     'django.contrib.auth.backends.ModelBackend',
     'accounts.backends.EmailAuth',
+)
+
+# Stripe environment variables
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_ZXY4MBdKiY7v0c8o1DBwKmRl')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_V4miNGDi3sOjWuNukaRsifIr')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,"static"),
 )
