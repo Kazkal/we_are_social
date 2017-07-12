@@ -24,14 +24,13 @@ SECRET_KEY = '$ii-l*$-15$&5ad33_581&p4ym+z2*6#d@a-v-kk+^0*r!^3bh'
 
 #Paypal settings#
 SITE_URL='http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL='http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL='http://bdccdcba.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL='AuctionHouse@gmail.com'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1:8000','http://bdccdcba.ngrok.io','localhost']
 
 # Application definition
 
@@ -47,7 +46,9 @@ INSTALLED_APPS = [
     'accounts',
     'paypal.standard.ipn',
     'paypal_store',
-    'products'
+    'products',
+    'magazines',
+    'reusable_blog',
     ]
 
 MIDDLEWARE = [
