@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'django_forms_bootstrap',
     'hello',
     'accounts',
@@ -49,7 +51,22 @@ INSTALLED_APPS = [
     'products',
     'magazines',
     'reusable_blog',
+    'debug_toolbar',
+    'tinymce',
+    'emoticons',
+    'disqus',
+    'threads',
     ]
+
+INTERNAL_IPS=('127.0.0.1',)
+
+
+AUTH_USER_MODEL = 'accounts.User'
+
+AUTHENTICATION_BACKENDS=(
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -59,6 +76,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
 ROOT_URLCONF = 'auth_demo.urls'
@@ -131,18 +149,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-AUTH_USER_MODEL = 'accounts.User'
-
-AUTHENTICATION_BACKENDS=(
-    'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth',
-)
+STATIC_ROOT=''
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_ZXY4MBdKiY7v0c8o1DBwKmRl')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_V4miNGDi3sOjWuNukaRsifIr')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,"static"),
+    os.path.join(BASE_DIR,"static"), #static directory at the project level
 )
+#tinymce settings
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR,"static",'js','tinymce','tinymce.min1.js')
