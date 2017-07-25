@@ -1,0 +1,356 @@
+[
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "Subject - IT Careers",
+        "description": "<p>Careers in IT.</p>"
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 2,
+    "fields": {
+        "name": "Subject - IT Courses",
+        "description": "<p>Courses in IT.</p>"
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 3,
+    "fields": {
+        "name": "Subject -  IT recruitment agencies",
+        "description": "<p>Agencies recruiting in software.</p>"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "name": "th- each new discussion started is called a thread - IT Careers",
+        "user": 6,
+        "subject": 1,
+        "created_at": "2017-07-16T15:18:09.093Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 2,
+    "fields": {
+        "name": "th- Full stack software development - IT Courses",
+        "user": 6,
+        "subject": 2,
+        "created_at": "2017-07-16T15:55:57.423Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 3,
+    "fields": {
+        "name": "th- CRG TEC Ltd",
+        "user": 6,
+        "subject": 3,
+        "created_at": "2017-07-16T16:28:22.285Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 4,
+    "fields": {
+        "name": "th- JT Recruit is a well respected local agency and we have a great deal of experience in recruiting the right person for you or finding the right job for you. What makes us different from a lot of our competitors is that we care about you!\r\nCoversIT in Derby\r\nNearest Office 34 Charnwood Street, Derby, Derbyshire, DE1 2GU",
+        "user": 6,
+        "subject": 3,
+        "created_at": "2017-07-16T15:45:57.423Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 5,
+    "fields": {
+        "name": "th- HW IT Search & Selection Ltd",
+        "user": 6,
+        "subject": 3,
+        "created_at": "2017-07-16T17:34:09.093Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 6,
+    "fields": {
+        "name": "th- IS Recruitment - IT Specialists",
+        "user": 6,
+        "subject": 3,
+        "created_at": "2017-07-16T17:35:09.093Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 7,
+    "fields": {
+        "name": "th- Bluefire IT & Telecoms",
+        "user": 6,
+        "subject": 3,
+        "created_at": "2017-07-16T17:37:09.093Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 8,
+    "fields": {
+        "name": "th- Stem skills shortages",
+        "user": 6,
+        "subject": 1,
+        "created_at": "2017-07-16T17:10:14.622Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 9,
+    "fields": {
+        "name": "IT degree apprenticeships",
+        "user": 6,
+        "subject": 1,
+        "created_at": "2017-07-17T16:24:13.418Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 10,
+    "fields": {
+        "name": "CW Jobs Ltd",
+        "user": 2,
+        "subject": 3,
+        "created_at": "2017-07-18T19:51:13.814Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 11,
+    "fields": {
+        "name": "Cyber security expert",
+        "user": 2,
+        "subject": 1,
+        "created_at": "2017-07-19T14:25:14.425Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 12,
+    "fields": {
+        "name": "Full stack software development",
+        "user": 2,
+        "subject": 1,
+        "created_at": "2017-07-19T14:39:31.995Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 13,
+    "fields": {
+        "name": "Full stack software development",
+        "user": 2,
+        "subject": 1,
+        "created_at": "2017-07-19T14:51:01.845Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 1,
+    "fields": {
+        "thread": 1,
+        "comment": "each new discussion started is called a thread, and can be replied to by as many people as so wish.",
+        "user": 6,
+        "created_at": "2017-07-16T15:18:09.094Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 2,
+    "fields": {
+        "thread": 2,
+        "comment": "Run by Code Institute",
+        "user": 6,
+        "created_at": "2017-07-16T15:55:57.424Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 3,
+    "fields": {
+        "thread": 2,
+        "comment": "Code Institute is an intensive web development coding school based in Dublin. Code Institute offers a 12 week in-person bootcamp as well as flexible online mentored options over 12-48 weeks.",
+        "user": 6,
+        "created_at": "2017-07-16T16:05:30.360Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 4,
+    "fields": {
+        "thread": 2,
+        "comment": "The program covers technologies like Python, JavaScript, GitHub, Agile Development, and more. Code Institute's main bootcamp offering can be full or part time and includes a hiring week at the conclusion and a specific focus on portfolio building.",
+        "user": 6,
+        "created_at": "2017-07-16T16:06:18.339Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 5,
+    "fields": {
+        "thread": 2,
+        "comment": "Credit-rated by Edinburgh Napier University. Graduates are also awarded a globally recognized Diploma in Software Development.",
+        "user": 6,
+        "created_at": "2017-07-16T16:08:13.078Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 6,
+    "fields": {
+        "thread": 3,
+        "comment": "New technology recruitment business, consisting of some of the most reputable and experienced leaders and recruiters within the UK. Looking to raise the standard across the recruitment of telecoms, IT and engineering professionals on a Nationwide basis. Leaders in the design, deployment and support of fixed and mobile communications networks alongside wireless & IOT with additional knowledge across electrical & mechanical engineering.\r\nCoverage UK Wide\r\nThe Hemington, Millhouse Business Centre, Station Road, Castle Donington, Leicestershire, DE74 2NJ",
+        "user": 6,
+        "created_at": "2017-07-16T16:28:22.286Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 8,
+    "fields": {
+        "thread": 8,
+        "comment": "Degree apprenticeships have been developed by Tech Partnership employers and higher education institutions, allowing students to gain an integrated Honours degree covering both academic learning and on-the-job training.",
+        "user": 6,
+        "created_at": "2017-07-16T17:10:14.623Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 9,
+    "fields": {
+        "thread": 8,
+        "comment": "The Digital & Technology Solutions BSc (Hons) degree, launched in 2015, develops degree apprentices to work in a wide range of graduate-level tech roles, including cyber-security analyst and data analyst. It is available at 14 UK universities so far.",
+        "user": 6,
+        "created_at": "2017-07-16T17:12:34.642Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 10,
+    "fields": {
+        "thread": 8,
+        "comment": "Students can also opt for the IT Management for Business BSc, ideal for those who want a business career in a digital economy; the Software Development for Business BSc, available at eight universities across the UK; or the IT Management for Business (MSc), a one-year post-grad course aimed at graduates with non-IT degrees wanting to gain fundamental technical knowledge.",
+        "user": 6,
+        "created_at": "2017-07-16T17:13:34.468Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 11,
+    "fields": {
+        "thread": 8,
+        "comment": "New post",
+        "user": 6,
+        "created_at": "2017-07-16T17:25:22.851Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 12,
+    "fields": {
+        "thread": 9,
+        "comment": "<p>They are similar to&nbsp;<a href=\"https://www.ucas.com/ucas/undergraduate/getting-started/apprenticeships-uk/higher-and-technical-apprenticeships\"><strong>higher apprenticeships</strong></a>, but differ in that they provide an opportunity to gain a full bachelor&rsquo;s (Level 6) or master&rsquo;s degree (Level 7). The courses are designed in partnership with employers, with part-time study taking place at a university or college. They can take between three to six years to complete, depending on the level of the course. At the moment, the scheme only operates across England and Wales, although applications may be made from all parts of the UK.</p>",
+        "user": 6,
+        "created_at": "2017-07-17T16:24:13.420Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 13,
+    "fields": {
+        "thread": 9,
+        "comment": "<p>Degree apprenticeships are new, so there are only a limited number of&nbsp;vacancies&nbsp;available at the moment. &nbsp;It is anticipated that the number of vacancies will grow over the next year or two, so if you decide&nbsp;a degree apprenticeship is the right choice for you, here are some tips to help you do your research:</p>\n<ul>\n",
+        "user": 6,
+        "created_at": "2017-07-17T16:29:52.365Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 14,
+    "fields": {
+        "thread": 9,
+        "comment": "<p>Competition for apprenticeships can be tough&nbsp;&mdash;&nbsp;partly&nbsp;because there are often only a limited number of vacancies&nbsp;available, particularly on higher and the new degree level apprenticeships,&nbsp;but also because school/college leavers and adults already in employment will be able to apply to them too. Employers may also be considering applications from existing employees, who may be applying for apprenticeships for the career progression opportunities they can offer.</p>",
+        "user": 6,
+        "created_at": "2017-07-17T16:36:59.902Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 15,
+    "fields": {
+        "thread": 9,
+        "comment": "<p>What are the benefits of degree apprenticeships:</p>\r\n<ul>\r\n<li>Apprentices are employed and paid a wage throughout the course.</li>\r\n<li>Apprentices will gain a full degree&nbsp;&mdash;&nbsp;bachelor's or master's&nbsp;&mdash;&nbsp;without needing to pay student fees.</li>\r\n<li>Apprentices will gain a head start in&nbsp;their chosen profession.</li>\r\n<li>It will allow apprentices to acquire the graduate/postgraduate level skills they need.</li>\r\n<li>Employers can attract new talent &mdash;&nbsp;particularly high calibre school-leavers who are keen to earn a degree in a work-based environment.</li>\r\n<li>Training costs are co-funded by the government and the&nbsp;employer.</li>\r\n</ul>",
+        "user": 6,
+        "created_at": "2017-07-17T16:41:01.487Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 16,
+    "fields": {
+        "thread": 3,
+        "comment": "<h3>Areas of focus</h3>\r\n<h4>Candidates recruited:</h4>\r\n<p>Technology professionals across telecoms, IT and engineering, ranging from hands on engineers through to C-Level, on a nationwide basis.</p>",
+        "user": 6,
+        "created_at": "2017-07-18T18:54:17.758Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 17,
+    "fields": {
+        "thread": 3,
+        "comment": "<h4>Additional services:</h4>\r\n<ul class=\"icon\">\r\n<li class=\"true\">Assistance with CV preparation</li>\r\n<li class=\"true\">Interview skills coaching</li>\r\n<li class=\"true\">Jobs Listed On Website</li>\r\n<li class=\"true\">Salary Surveys</li>\r\n<li class=\"false\">Assistance with Work Permits / Visa's</li>\r\n<li class=\"false\">Job Alert E-Mails</li>\r\n<li class=\"false\">Recruit candidates WITHOUT the right to work in the European Union (EU)</li>\r\n</ul>",
+        "user": 6,
+        "created_at": "2017-07-18T18:55:08.756Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 19,
+    "fields": {
+        "thread": 10,
+        "comment": "<p><strong>CWJobs.co.uk (edit here)</strong>&nbsp;is the leading specialist IT recruitment website enabling permanent and contract IT jobseekers to search and apply for jobs across all skills and industry sectors throughout the UK and Ireland.</p>\r\n<p>Each month the site draws around 450,000 IT candidates attracted by the opportunity to search thousands of IT jobs from the UK and Ireland's leading employers and generating more than 215,000 job applications.</p>",
+        "user": 2,
+        "created_at": "2017-07-18T19:51:13.815Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 20,
+    "fields": {
+        "thread": 11,
+        "comment": "<p>Cyber security is growing in size and opportunity year on year and it &nbsp;incorporates lots of different skills and has variety.&nbsp;&nbsp;There are many different career paths, as well as the opportunity to specialise in highly skilled areas if you want to, such as ethical hacking or forensics.</p>",
+        "user": 2,
+        "created_at": "2017-07-19T14:25:14.427Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 21,
+    "fields": {
+        "thread": 12,
+        "comment": "<p>Secondly, knowing at least a little bit of everything might not make you a master of a specific craft, that much is true, but it&rsquo;ll make you capable of understanding what goes into a project and which ones of these technologies a project actually needs. This is a priceless skill when delegating, opening an agency, or just guiding an existing team back from a lost path onto a well defined road.</p>",
+        "user": 2,
+        "created_at": "2017-07-19T14:39:31.997Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 22,
+    "fields": {
+        "thread": 13,
+        "comment": "<p>Secondly, knowing at least a little bit of everything might not make you a master of a specific craft, that much is true, but it&rsquo;ll make you capable of understanding what goes into a project and which ones of these technologies a project actually needs. This is a priceless skill when delegating, opening an agency, or just guiding an existing team back from a lost path onto a well defined road.</p>",
+        "user": 2,
+        "created_at": "2017-07-19T14:51:01.847Z"
+    }
+}
+]
