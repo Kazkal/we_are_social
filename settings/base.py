@@ -6,8 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = '$ii-l*$-15$&5ad33_581&p4ym+z2*6#d@a-v-kk+^0*r!^3bh'
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','localhost:8000']
-
+ALLOWED_HOSTS = ['localhost','code-institute-social-staging2.herokuapp.com']
 SITE_ID = 2
 
 # Application definition
@@ -35,6 +34,9 @@ INSTALLED_APPS = [
     'threads',
     'polls',
 ]
+
+
+INTERNAL_IPS=('127.0.0.1',)
 
 AUTH_USER_MODEL = 'accounts.User'
 AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
