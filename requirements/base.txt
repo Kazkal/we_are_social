@@ -4,7 +4,7 @@ certifi==2017.4.17
 chardet==3.0.4
 django-debug-toolbar==1.8
 django-disqus==0.5
-Django==1.8.9
+Django==1.11.29
 django-emoticons==1.1.2
 djangorestframework==3.3
 django-forms-bootstrap==3.1.0
